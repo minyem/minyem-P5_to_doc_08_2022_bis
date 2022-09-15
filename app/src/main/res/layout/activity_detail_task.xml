@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    tools:context=".ui.DetailTaskActivity"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:padding="10dp"
+    android:layout_marginTop="130dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titre_Reunion"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+
+        android:text="DETAIL TACHE " />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/nom_tache"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Nom Tâche :" />
+
+        <EditText
+            android:id="@+id/inom_tache"
+            android:layout_width="200dp"
+            android:layout_height="38dp"
+            android:hint="Nom tâche"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/nom_projet"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Nom Projet :" />
+
+
+        <TextView
+            android:id="@+id/inom_projet"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="Projet"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/date_tache"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Date Création :" />
+
+        <EditText
+            android:id="@+id/idate_creationtache"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="JJ:MM:AAAA"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/heure_Création"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Heure Création :" />
+
+        <EditText
+            android:id="@+id/iheure_creation"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="HH:MM"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/modif"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cornerRadius="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Modif"/>
+
+</LinearLayout>
